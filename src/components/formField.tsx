@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import { useFormContext } from "react-hook-form";
 
 export interface UseFormFieldProps extends PropsWithChildren {

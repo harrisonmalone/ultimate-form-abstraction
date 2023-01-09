@@ -1,4 +1,5 @@
-import { ComponentProps, forwardRef } from 'react';
+import type { ComponentProps } from 'react';
+import { forwardRef } from 'react'
 import { FormField, useFormField } from './formField';
 
 interface Props extends ComponentProps<'select'> {
@@ -6,7 +7,7 @@ interface Props extends ComponentProps<'select'> {
   label: string
 }
 
-export const Select = forwardRef<HTMLSelectElement, Props>((props, ref) => {
+export const Select = forwardRef<HTMLSelectElement, Props>(function ForwardedSelect (props, ref) {
   const { formFieldProps, childProps } = useFormField(props);
 
   return (

@@ -4,7 +4,7 @@ import { z } from "zod";
 import { Form } from "../components/form";
 import { Input } from "../components/input";
 import { Select } from "../components/select";
-import Submit from "../components/submit";
+import { SubmitButton } from "../components/submit";
 import { useZodForm } from "../hooks/useZodForm";
 
 const schema = z.object({
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               </option>
             ))}
           </Select>
-          <Submit>Submit</Submit>
+          <SubmitButton>Submit</SubmitButton>
         </Form>
       </div>
     </>
